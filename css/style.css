@@ -1,0 +1,538 @@
+
+/* CHAPTER 1 */
+/* p {
+    font-size: 64px;
+    color: purple;
+} */
+
+
+/* CHAPTER 2 */
+/* one per page */
+/* body {                
+    font-size: 22px;
+
+} */
+
+/* one per page */
+/* main {
+    font-family: monospace;
+}
+
+button, input, textarea, select {
+    font: inherit;
+}
+
+.gray {
+    color: grey;
+}
+
+h1, h2 {
+    color: blue;
+}
+
+p {
+    color: purple;
+}
+
+p {
+    color: red;
+}
+
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+
+#second {
+    font-style: italic;
+} */
+
+
+
+/* CHAPTER 3  css colors */
+/* body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: #ffefd5;
+    color: rgb(0, 0, 0);
+}
+
+p {
+    color: #333;
+} */
+
+
+
+/* CHAPTER 4 css units */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    border: 2px dashed red;    
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    width: 40ch;
+} */
+
+
+
+/* CHAPTER 5 css box model */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    border: dashed red;    
+
+    font-size: 1.5rem;
+    margin: 1.5em;
+    border: 10px double red; */
+    /* border-top-color: blue;
+    border-right: 10px dotted blue; */
+    /* margin-top: 1.5em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    margin-left: 2em; */
+    /* padding: 1.5em;
+    outline: 5px solid purple;
+    outline-offset: -20px;
+}
+
+.circle {
+    margin: 3rem auto;
+    background-color: gold;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50px;
+    outline: 2px solid red;
+    outline-offset: 0.25rem;
+} */
+
+/* CHAPTER 6 typography */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+} */
+
+/* input, button {
+    font: inherit;
+} */
+
+
+/* p { */
+    /* text-decoration: none; */
+    /* text-transform: uppercase; */
+     /* text-align: left;            default */
+     /* text-align: justify; */
+     /* text-align: right; */
+     /* text-indent: 2em; */
+     /* line-height: 1.5; */
+     /* letter-spacing: 0.1em;
+     word-spacing: 0.1em; */
+     /* font-weight: 900; */
+     /* font-style: italic; */
+/* } */
+
+
+/* CHAPTER 7 styling links  */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+a {
+    color: hsl(207, 44%, 49%);
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover, a:focus {
+    color: hsl(207, 44%, 49%, 0.8);
+    background: gold; */
+    /* opacity: 0.8; */
+/* }
+
+a:active {
+    color: red;
+} */
+
+/* CHAPTER 8 styling lists */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+ol {
+    list-style-type: lower-alpha;
+    padding: 0;
+}
+
+ul {
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: blue; */
+    /* line-height: 1.6; */
+    /* list-style-image: url('../images/checkmark.png');*/      /*bulltet points ki jagah image aa jayegi */
+    /*list-style: square url('../images/checkmark.png') inside;  */    /* ye shorthand hai, agar kisi wajah se image nhi render hoti hai to fallback square bullet points hai */
+/* /* */
+
+/*ul ::marker {   */         /* isse khali bullet points ka color change hoga */
+   /* color: #ff0000;
+    font-family: fantasy;     
+    font-size: 1em;
+    content: "Only $5 >> ";
+}*/
+
+/* CHAPTER 10 display */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+} */
+
+/*main {         */     /* block level element */
+  /*  background-color: aqua;
+    width: 50%;
+}*/
+
+/* p {
+    background-color: lightgray;
+}
+
+.opposite {
+    display: inline-block;
+    background-color: #333;
+    color: whitesmoke;
+    padding: 4rem;
+    height: 200px;
+    margin-top: 100px;
+} */
+
+/* ul {
+    list-style-type: none;
+    padding: 0.5rem;
+    text-align: right;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-inline: 0.5rem;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover, li a:focus {
+    text-decoration: underline;
+} */
+
+
+/* CHAPTER 11 Floats */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.block {
+    width: 30vw;
+    height: 30vw;
+    background-color: #000;
+    color: white;
+    padding: 1rem;
+}
+
+.left {
+    float: left;
+    margin-right: 1rem;
+}
+
+.right {
+    float: right;
+    margin-left: 1rem;
+}
+
+.clear {
+    clear: both;
+}
+
+section {
+    background-color: bisque;
+    border: 1px solid #333;
+    padding: 1rem;
+    display: flow-root;
+} */
+
+
+
+/* CHAPTER 12 Columns */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@1000&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+}
+
+.columns {
+    / * column-count: 4;
+    column-width: 250px; * /
+    columns: 4 250px;   / * shorthand * /
+    column-rule: 3px solid #333;           
+    column-gap: 3rem;                            / *rule ke idhar udhar space ke liye * /
+}
+
+.columns p {
+    margin-top: 0;
+}
+
+.columns h2 {
+    margin-top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    break-inside: avoid;                      / * ye jo resize karne par thodi si kali patti dusre column me chali jaa rhi thi abb wo nhi hoga
+}
+
+.columns .quote {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;          / * text-align property horizontal text alignment ko set karne ke liye hoti hai * /
+    color: #333;
+    column-span: all;            / * abb ye quote wala paragraph sabhi column me expand kar jaayega * /
+}
+
+.nowrap {
+    white-space: nowrap;           / * isse ye jo nowrap class wala span hai wo resize karne par break nhi hoga mtlab jab resize kar rhe hoge to iss span element ka content ya to ek line me hoga ya pura ka pura dusri line me hoga; aisa nhi hoga ki aadha content upar wali line me hai aur aadha content neeche wali line me hai * /
+}   */
+
+
+/* CHAPTER 13 Position */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+
+.outer-container {
+    border: 3px dashed #000;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+    / * position: relative; * /
+}
+
+.inner-container {
+    border: 2px solid #00f;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+}
+
+
+/ * absolute positioning needs a relative parent and if doesn't have an ancestor element that is positioned relative then it takes the initial boundary/box which is essentially a browser window * /
+/ * agar hame screen se koi element hatana hai to use kar sakte hai display: None; or we can decrease its opacity but lekin ye accessibiliy reasons ki wajah se shi nhi hai; to agar hum log chahte hai 
+ki koi element screen se gayab bhi ho jaaye lekin html me bhi present ho taki screen reader use access kar sake to uss element ki position absolute kardo aur left or right or top or down ki value some -ve 
+me kardo taki wo screen se gayab ho jaaye * /
+.absolute {
+    background-color: #00f;
+    position: absolute;                / * position: static;   default for every element * /
+    top: 0px;
+    left: 0px;
+    z-index: 1;                    / * default value z-index ki 0 hoti hai * /
+}
+
+.relative {
+    background-color: #f00;
+    position: relative;                  / * isska matlab hai ki ye abb relative hai apne parent ke, aur hume iske parent me position relative declare karne ki bhi jarurat nhi hai * /
+    top: 300px;
+    left: 100px;
+}
+
+.fixed {
+    background-color: green;
+    position: fixed;                / * position fixed property se wo element screen par fix ho jata hai aur scroll karne par bhi move nhi karta hai * /
+    top: 100px;
+}
+
+/ * agar top or bottom or left or right position nhi fix karoge to sticky position wala element apni hi place par rahega aur scroll karne par screen se hat bhi jaayega; lekin agar top or
+ bottom or right or left ki value define karte ho to jab ye element uss defined position par pahuchega to ye wahi par stick rahega jab tak ki scroll karte karte iska parent screen se bahar
+naa chala jaaye aur fir aakhari me jab iska parent block screen se bahar ja raha hoga to ye bhi usi ke saath screen se bahar chala jaayega * /
+.sticky {
+    background-color: #000;
+    position: sticky;                             / * sticky is just little different from the fixed; it will remain in the normal flow until it reaches to defined position * /
+    top: 0;
+}
+
+/ * Remember, how to make things disappear!  * /
+
+/ * ///////////////////////// * /
+
+html { scroll-behavior: smooth; }     / * ye property work nhi karegi agar ye body element ke andar define ki jayegi to * /
+
+section {
+    height: 100vh;
+}
+
+.blue { background-color: #00f;}
+.red { background-color: #f00;}
+.green { background-color: green;}
+
+header, footer {
+    color: #fff;
+    text-align: center;
+    height: 100px;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    font-size: 5rem;
+}
+
+footer {
+    background-color: #000;
+    / *position: fixed; * /                    / * It removes the element from the normal flow * /
+    position: sticky;
+    bottom: 0;
+    font-size: 3rem;
+    / * width: 100%; * /
+}
+
+a:visited {
+    color: #fff;
+}
+
+.social {
+    background-color: royalblue;
+    color: #fff;
+    font-size: inherit;            / * Kyoki ye button hai isiliye ye apne aap font-size property inherit nhi karega isiliye explicitly batana padega ki inherit karo * /
+    padding: 1rem;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+} */
+
+
+/* CHAPTER 14 Flexbox */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;                      / * ye shorthand hai left aur right me ek sath margin set karne ke liye * /
+    border: 1px solid #000;
+
+    / * flexbox_properties * /
+    display: flex;
+    / *gap: 1rem; * /                                / * we will get 1rem gap between each flex items * /
+    justify-content: space-evenly;               / * justify content ki aur bhi values hoti hai jaise justify-content: flex-start;      flex-start- jha se flexible box start ho rha hai            flex-end- jha par flexible box end ho rha hai * /   / * other values- space-around, space-evenly, space-between , center* /
+    align-items: center;                     / *align-items property vertically items ko set karne ke liye hai * /                 / * flex-start- top of flexible box   flex-end- bottom of flexible blox      center- top aur bottom ke center me * /
+    flex-direction: row;               / *default value row hoti hai * /
+    flex-wrap: wrap;
+    flex-flow: row wrap;          / * shorthand for flex-direction and flex-wrap * /
+    align-content: space-evenly;           / * this aligns the rows and this takes values like justify-content but this is for row * /
+
+}
+
+.box {
+    / * min-width: 100px; * /
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+    / * flex properties * /
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    / * flex-grow: 1;   * /                / * now each box will grow and take up entire page * /
+    flex-shrink: 1;                      / * same as flex-grow but it is for shrinking; now it is not going outside the parent container for nowrap also * /  
+    flex-basis: 250px;             / *It is essentially different from min-width but here it is doing exactly what min-width do * /
+    flex: 1 1 150px;            / *shorthand for flex-grow, flex-shrink, flex-basis * /
+
+}
+
+.box:nth-child(2) {
+   / * flex-grow: 2;   * /           / * now for growing this box will take remaing space - 2units for every 1unit that box 1 is taking * /
+   flex-shrink: 2;
+   flex: 2 2 150px;             / *shorthand uppar likha hai * /
+
+} */
