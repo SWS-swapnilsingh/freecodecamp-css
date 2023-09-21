@@ -502,7 +502,7 @@ body {
     display: flex;
     / *gap: 1rem; * /                                / * we will get 1rem gap between each flex items * /
     justify-content: space-evenly;               / * justify content ki aur bhi values hoti hai jaise justify-content: flex-start;      flex-start- jha se flexible box start ho rha hai            flex-end- jha par flexible box end ho rha hai * /   / * other values- space-around, space-evenly, space-between , center* /
-    align-items: center;                     / *align-items property vertically items ko set karne ke liye hai * /                 / * flex-start- top of flexible box   flex-end- bottom of flexible blox      center- top aur bottom ke center me * /
+    align-items: center;                     / *align-items property vertically items ko set karne ke liye hai; kyoki har verticle line me khali ek hi item hai isiliye iss property me space wali values nhi hai * /                 / * flex-start- top of flexible box   flex-end- bottom of flexible blox      center- top aur bottom ke center me * /
     flex-direction: row;               / *default value row hoti hai * /
     flex-wrap: wrap;
     flex-flow: row wrap;          / * shorthand for flex-direction and flex-wrap * /
@@ -536,3 +536,102 @@ body {
    flex: 2 2 150px;             / *shorthand uppar likha hai * /
 
 } */
+
+
+/* CHAPTER 15 Grid Layout */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 50px auto 50px;
+    /* this is where we can define names to our grid items */
+    grid-template-areas: 
+                        "hd hd hd hd hd hd hd hd hd"
+                        "mn mn mn mn mn mn mn sb sb"
+                        "ft ft ft ft ft ft ft ft ft";
+    column-gap: 0.5rem;               
+}
+
+.el {
+    background-color: rebeccapurple;
+    color: #fff;
+    display: grid;
+    place-content: center;
+}
+
+.header {
+    /* this is where we can define our name */
+    grid-area: hd;
+}
+
+.sidebar {
+    grid-area: sb;
+    background-color: #00f;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.container {
+    grid-area: mn;
+    min-height: 400px;
+    display: grid;          /* now all the items inside this container will become grid items */
+    /* grid-template-columns: 200px 100px 200px; */     /* abb teen columns hoge pahla 200px ka, dusra 100px ka aur teesra 200px ka */
+    /* grid-template-columns: 2fr 1fr 1fr; */        /* ye fraction unit specially grid ke liye hi use ki jaati hai; abb pahla column 2fraction ka hoga, dusra aur teesra column 1fraction ka hoga */
+    /* grid-template-columns: 200px 1fr 1fr; */
+    /* grid-template-columns: repeat(4, 1fr) */         /*shortcut hai;  4 columns banao each of 1fr */
+    grid-template-columns: repeat(2, 1fr 2fr);          /* abb chaar columns hoge phala 1fr dusra 2fr teesra 1fr aur chauth 2fr */
+
+    /* working with rows */
+    grid-auto-rows: minmax(150px, auto);           /* minimum height of row 150px and max height of row auto */
+    gap: 1em 0.5em;             /* shorthand for row-gap and column-gap */
+
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.box:first-child {
+    background-color: #00f;
+    /* grid-column-start: 1; */          /*this is for column, now first box start at 1st line and end at 4th line */
+    /* grid-column-end: 4; */
+    /* grid-row-start: 1;  */               /*this is for row, now first box start at 1st line and end at 3rd line */
+    /* grid-row-end: 3; */
+    grid-column: 1 / 4;               /* shorthand for grid-column-start and grid-column-end */
+    grid-row: 1 / 3;                 /* shorthand for grid-row-start and grid-row-end  */
+
+
+    display: grid;
+    align-content: center;            /* ye verticle alignment ke liye hai; other values start, end, center */
+    justify-content: center;         /* ye horizontal alignment ke liye hai */
+    /* place-content: end center; */      /* shorthand for align-content and justify-content */
+    place-content: center;                 /* agar khali ek hi value di gyi hai to ye dono ke liye hogi */
+}
+
+.box:nth-child(2) {
+    background-color: purple;
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+}
+
+
+/* ways to setup grid 
+1) using grid-auto-rows and grid-auto-columns
+2) using grid-template-rows and grid-template-columns      // issme jyada flexibliliy milti hai grid-row and grid-column setup kar sakte ho 
+3) named grid and grid template area
+*/
